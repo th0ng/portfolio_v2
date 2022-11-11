@@ -9,6 +9,9 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 
 import Image from "next/image";
 import model from "../public/model.jpg";
+import avatar from "../public/avatar.png";
+
+import Projects from "./api/projects";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,10 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-40 dark:text-yellow-50">
-        <section className="h-screen">
+      <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50">
+        <section className="">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">devedbythong</h1>
+            <h1 className="text-xl font-burtons">devedbyaki</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -50,25 +53,19 @@ export default function Home() {
             <h3 className="text-2xl py-2">
               Software Engineering student from Tampere.
             </h3>
-            {/* <p className="text-md py-5 leading-8 text-gray-800"> */}
-            {/*   Second-year software engineering student from Tampere University */}
-            {/*   of Applied Sciences. I am currently focusing on FullStack */}
-            {/*   Development. Love chatting about tech. Join me down below and */}
-            {/*   let's get cracking! */}
-            {/* </p> */}
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:pb-0">
               <AiFillTwitterCircle />
               <AiFillLinkedin />
               <AiFillGithub />
             </div>
-            <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden">
-              <Image src={model} layout="fill" objectFit="cover" />
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <Image src={avatar} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
 
-        <section className="h-screen">
-          <h3 className="text-4xl font-burtons">about me</h3>
+        <section className="lg:h-screen md:h-screen pt-5">
+          <h3 className="text-4xl font-burtons pt-5">About Me</h3>
           <div className="text-lg pt-8 font-mono">
             <p className="py-3">
               Hi there. I am an second year Software Engineering student from
@@ -78,13 +75,6 @@ export default function Home() {
               Vue and Python, Node, Express for backend. Here you can see some
               of my <a href="#">projects</a>.
             </p>
-            <p className="py-3">
-              I enjoy using new tools and techniques to build sites that are
-              both aesthetically pleasing and functional. I also place a high
-              value on collaboration and communication between myself and my
-              clients, which is why I consider it essential to build sites that
-              are not only easy to use but also user-friendly.
-            </p>
             <p>
               Feel free to snoop around on my social media even though there is
               nothing there haha. For inquiries or a how you doing, contact me,
@@ -92,6 +82,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <Projects />
       </main>
     </div>
   );
