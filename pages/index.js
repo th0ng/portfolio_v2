@@ -8,10 +8,7 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
 import Image from "next/image";
-import model from "../public/model.jpg";
 import avatar from "../public/avatar.png";
-
-import Projects from "./api/projects";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50">
-        <section className="">
+        <section className="">  
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">devedbyaki</h1>
             <ul className="flex items-center">
@@ -59,7 +56,7 @@ export default function Home() {
               <AiFillGithub />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={avatar} objectFit="cover" alt="My avater"/>
+              <Image src={avatar} layout="fill" objectFit="cover" alt="My avater"/>
             </div>
           </div>
         </section>
@@ -82,7 +79,6 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <Projects />
       </main>
     </div>
   );
