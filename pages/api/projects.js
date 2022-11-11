@@ -6,7 +6,7 @@ const Projects = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3001/")
+    fetch("http://localhost:3001/api/projects")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
