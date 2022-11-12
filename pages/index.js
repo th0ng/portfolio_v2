@@ -5,12 +5,16 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsBrightnessHighFill } from "react-icons/bs";
+
 
 import Image from "next/image";
 import avatar from "../public/avatar.png";
-import Keepaki from "../public/Keepaki.png";
-import spotaki from "../public/spotaki.png";
+
+import About from "./components/About";
+import Tech from "./components/Tech";
+import Projects from "./components/Projects";
+import Contactform from "./components/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,21 +27,18 @@ export default function Home() {
       </Head>
 
       <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50">
-        <section className="lg:h-screen">  
-          <nav className="py-10 mb-12 flex justify-between">
+        <section className="lg:h-screen overflow-hidden">  
+        <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">devedbyaki</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  className="cursor-pointer text-2xl"
-                  onClick={() => {
-                    setDarkMode(!darkMode);
-                  }}
-                />
+                {darkMode ? <BsBrightnessHighFill className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform" onClick={() => {
+                    setDarkMode(!darkMode);}} /> : <BsFillMoonStarsFill className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform" onClick={() => {
+                      setDarkMode(!darkMode);}} />}
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110"
                   href="#"
                 >
                   Resume
@@ -46,10 +47,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-purple-400 font-medium">
+            <h2 className="text-6xl py-2 text-purple-400 font-semibold font-mono">
               Thong Hoang
             </h2>
-            <h3 className="text-2xl py-2">
+            <h3 className="text-2xl py-2 font-mono">
               Software Engineering student from Tampere.
             </h3>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:pb-0">
@@ -63,73 +64,30 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="lg:h-screen pt-5">
-          <h3 className="text-4xl font-burtons pt-5 text-purple-400">About Me</h3>
-          <div className="text-lg pt-8 font-mono">
-            <p className="py-3">
-              Hi there. I am an second year <span>Software Engineering</span>  student from Tampere University of Applied Sciences. Lately I have been
-              focusing on Fullstack Developing. My experience spans across
-              multiple technologies, frontend with HTML, CSS, Javascript, React,
-              Vue and Python, Node, Express for backend. Here you can see some
-              of my <a href="#">projects</a>.
-            </p>
-            <p className="py-3">
-              Feel free to snoop around on my social media even though there is
-              nothing there haha. For inquiries or a how you doing, contact me,
-              I will be happy to hear from you.
-            </p>
-          </div>
-        </section>
         <section className="pt-5">
-          <h3 className="text-4xl font-burtons py-5 text-purple-400">My Projects</h3>
-          {/* Projects listed by cards */}
-          <div className="card lg:card-side bg-base-100 shadow-xl my-5">
-              <figure>
-                <div className="mx-auto w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
-                  <Image src={Keepaki} layout="fill" objectFit="cover" alt="Keepaki"/>
-                </div>
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Keepaki</h2>
-                <p>A clone of Google Keep written by me.</p>
-                <ul>Function:
-                  <li>Register, login</li>
-                  <li>Take notes, delete unused notes</li>
-                </ul>
-                <a href="https://github.com/th0ng/Keepaki" className="text-purple-400">Visit Git repos.</a>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-primary">Reactjs</div>
-                  <div className="badge badge-primary">Nodejs</div>
-                </div>
-              </div>
-          </div>
+          <About />
+        </section>
+        
+        <section className="pt-5">
+          <Tech />
+        </section>
 
-          <div className="card lg:card-side bg-base-100 shadow-xl my-5">
-              <figure>
-                <div className="mx-auto w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
-                  <Image src={spotaki} layout="fill" objectFit="cover" alt="Spotaki"/>
-                </div>
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Spotaki</h2>
-                <p>A clone of Spotify written by me.</p>
-                <ul>Function:
-                  <li>Listen to music from Shazam.</li>
-                  <li>Look for songs, artists details.</li>
-                  <li>Look for playlist.</li>
-                  <li>Around you.</li>
-                  <li>Get top songs by genres.</li>
-                </ul>
-                <a href="https://github.com/th0ng/Spotaki" className="text-purple-400">Visit Git repos.</a>
-                <div className="card-actions justify-end">
-                <div className="badge badge-primary">Reactjs</div>
-                <div className="badge badge-primary">Redux</div>
-                <div className="badge badge-primary">Rapid API</div>
-                </div>
-              </div>
-          </div>
+        <section className="pt-5 pb-8">
+          <Projects />
+        </section>
+        
+        <section className="pt-5">
+          <Contactform />
         </section>
       </main>
+
+      <footer className="footer items-center p-4 bg-neutral text-neutral-content">
+        <div className="items-center grid-flow-col">
+          <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg> 
+        <p>Copyright © 2022 - Deved By Aki</p>
+  </div> 
+  
+</footer>
     </div>
   );
 }
