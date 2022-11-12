@@ -96,6 +96,7 @@ export default function Home() {
                   <li>Register, login</li>
                   <li>Take notes, delete unused notes</li>
                 </ul>
+                <a href="https://github.com/th0ng/Keepaki" className="text-purple-400">Visit Git repos.</a>
                 <div className="card-actions justify-end">
                   <div className="badge badge-primary">Reactjs</div>
                   <div className="badge badge-primary">Nodejs</div>
@@ -119,6 +120,7 @@ export default function Home() {
                   <li>Around you.</li>
                   <li>Get top songs by genres.</li>
                 </ul>
+                <a href="https://github.com/th0ng/Spotaki" className="text-purple-400">Visit Git repos.</a>
                 <div className="card-actions justify-end">
                 <div className="badge badge-primary">Reactjs</div>
                 <div className="badge badge-primary">Redux</div>
