@@ -9,6 +9,8 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 
 import Image from "next/image";
 import avatar from "../public/avatar.png";
+import Keepaki from "../public/Keepaki.png";
+import spotaki from "../public/spotaki.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,7 +37,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8"
                   href="#"
                 >
                   Resume
@@ -44,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-500 font-medium">
+            <h2 className="text-5xl py-2 text-purple-400 font-medium">
               Thong Hoang
             </h2>
             <h3 className="text-2xl py-2">
@@ -55,14 +57,14 @@ export default function Home() {
               <AiFillLinkedin />
               <AiFillGithub />
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 ring ring-primary ring-offset-base-100 ring-offset-2">
               <Image src={avatar} layout="fill" objectFit="cover" alt="My avater"/>
             </div>
           </div>
         </section>
 
         <section className="lg:h-screen pt-5">
-          <h3 className="text-4xl font-burtons pt-5">About Me</h3>
+          <h3 className="text-4xl font-burtons pt-5 text-purple-400">About Me</h3>
           <div className="text-lg pt-8 font-mono">
             <p className="py-3">
               Hi there. I am an second year <span>Software Engineering</span>  student from Tampere University of Applied Sciences. Lately I have been
@@ -78,8 +80,65 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="lg:h-screen pt-5">
-          <h3 className="text-4xl font-burtons pt-5">My Projects</h3>
+        <section className="pt-5">
+          <h3 className="text-4xl font-burtons py-5 text-purple-400">My Projects</h3>
+          {/* Projects listed by cards */}
+          <div className="card lg:card-side bg-base-100 shadow-xl my-5">
+              <figure>
+                <div className="mx-auto w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
+                  <Image src={Keepaki} layout="fill" objectFit="cover" alt="Keepaki"/>
+                </div>
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Keepaki</h2>
+                <p>A clone of Google Keep written by me.</p>
+                <ul>Function:
+                  <li>Register, login</li>
+                  <li>Take notes, delete unused notes</li>
+                </ul>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-primary">Reactjs</div>
+                  <div className="badge badge-primary">Nodejs</div>
+                </div>
+              </div>
+          </div>
+
+          <div className="card lg:card-side bg-base-100 shadow-xl my-5">
+              <figure>
+                <div className="mx-auto w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
+                  <Image src={spotaki} layout="fill" objectFit="cover" alt="Spotaki"/>
+                </div>
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Spotaki</h2>
+                <p>A clone of Spotify written by me.</p>
+                <ul>Function:
+                  <li>Listen to music from Shazam.</li>
+                  <li>Look for songs, artists details.</li>
+                  <li>Look for playlist.</li>
+                  <li>Around you.</li>
+                  <li>Get top songs by genres.</li>
+                </ul>
+                <div className="card-actions justify-end">
+                <div className="badge badge-info gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  info
+                </div>
+                <div className="badge badge-success gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  success
+                </div>
+                <div className="badge badge-warning gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  warning
+                </div>
+                <div className="badge badge-error gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  error
+                </div>
+                </div>
+              </div>
+          </div>
         </section>
       </main>
     </div>
