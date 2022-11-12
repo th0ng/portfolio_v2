@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50">
-        <section className="">  
+        <section className="lg:h-screen">  
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">devedbyaki</h1>
             <ul className="flex items-center">
@@ -61,23 +61,25 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="lg:h-screen md:h-screen pt-5">
+        <section className="lg:h-screen pt-5">
           <h3 className="text-4xl font-burtons pt-5">About Me</h3>
           <div className="text-lg pt-8 font-mono">
             <p className="py-3">
-              Hi there. I am an second year Software Engineering student from
-              Tampere University of Applied Sciences. Lately I have been
+              Hi there. I am an second year <span>Software Engineering</span>  student from Tampere University of Applied Sciences. Lately I have been
               focusing on Fullstack Developing. My experience spans across
               multiple technologies, frontend with HTML, CSS, Javascript, React,
               Vue and Python, Node, Express for backend. Here you can see some
               of my <a href="#">projects</a>.
             </p>
-            <p>
+            <p className="py-3">
               Feel free to snoop around on my social media even though there is
               nothing there haha. For inquiries or a how you doing, contact me,
               I will be happy to hear from you.
             </p>
           </div>
+        </section>
+        <section className="lg:h-screen pt-5">
+          <h3 className="text-4xl font-burtons pt-5">My Projects</h3>
         </section>
       </main>
     </div>
