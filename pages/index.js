@@ -19,7 +19,7 @@ import Projects from "./components/Projects";
 import Contactform from "./components/Contact";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -40,11 +40,11 @@ export default function Home() {
                       setDarkMode(!darkMode);}} />}
               </li>
               <li>
-                <button
+                <a href="https://aquamarine-faythe-9.tiiny.site/" download
                   className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium"
                 >
                   Resume
-                </button>
+                </a>
               </li>
             </ul>
           </nav>
