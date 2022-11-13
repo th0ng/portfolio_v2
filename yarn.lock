@@ -1,2 +1,2 @@
 NETLIFY_NEXT_PLUGIN_SKIP="true",
-YARN_FLAGS="",
+YARN_FLAGS="--force",
