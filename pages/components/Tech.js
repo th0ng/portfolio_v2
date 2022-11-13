@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import {AiOutlineHtml5, AiFillGithub} from "react-icons/ai";
 import {DiCss3, DiJavascript, DiReact, DiNpm, DiHeroku} from "react-icons/di";
 import {SiTailwindcss, SiVuedotjs, SiExpress, SiMongodb, SiPostgresql, SiTypescript, SiDocker, SiNetlify, SiWebpack, SiPostman} from "react-icons/si";
@@ -10,22 +12,34 @@ export default function Tech() {
       <h3 className="text-2xl font-sono pt-3">For building client-side applications</h3>
       <div className="carousel carousel-center rounded-box">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <AiOutlineHtml5 className="text-9xl mr-3"/>
+          <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+            <AiOutlineHtml5 color="#7F669D" className="text-9xl mr-3"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <DiCss3 className="text-9xl"/>
+          <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+            <DiCss3 color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiTailwindcss className="text-9xl"/>
+          <Link href="https://tailwindcss.com/" target="_blank">
+            <SiTailwindcss color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <DiJavascript className="text-9xl"/>
+          <Link href="https://www.javascript.com/" target="_blank">
+            <DiJavascript color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <DiReact className="text-9xl"/>
+          <Link href="https://reactjs.org/" target="_blank">
+            <DiReact color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiVuedotjs className="text-9xl"/>
+          <Link href="https://vuejs.org/" target="_blank">
+            <SiVuedotjs color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
       </div>
 
@@ -33,19 +47,29 @@ export default function Tech() {
       <h3 className="text-2xl font-sono pt-3">For building backend applications</h3>
       <div className="carousel carousel-center rounded-box ">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <FaNode className="text-9xl"/>
+          <Link href="https://nodejs.org/en/" target="_blank">
+            <FaNode color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiExpress className="text-9xl"/>
+          <Link href="https://expressjs.com/" target="_blank">
+            <SiExpress color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiMongodb className="text-9xl"/>
+          <Link href="https://www.mongodb.com/" target="_blank">
+            <SiMongodb color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiPostgresql className="text-9xl"/>
+          <Link href="https://www.postgresql.org/" target="_blank">
+            <SiPostgresql color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiTypescript className="text-9xl"/>
+          <Link href="https://www.typescriptlang.org/" target="_blank">
+            <SiTypescript color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
       </div>
 
@@ -53,28 +77,44 @@ export default function Tech() {
       <h3 className="text-2xl font-sono pt-3">Others...and more!</h3>
       <div className="carousel carousel-center rounded-box">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <DiNpm className="text-9xl"/>
+          <Link href="https://www.npmjs.com/" target="_blank">
+            <DiNpm color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <AiFillGithub className="text-9xl"/>
+          <Link href="https://github.com/" target="_blank">
+            <AiFillGithub color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiDocker className="text-9xl"/>
+          <Link href="https://www.docker.com/" target="_blank">
+            <SiDocker color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <FaAws className="text-9xl"/>
+          <Link href="https://aws.amazon.com/" target="_blank">
+            <FaAws color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiNetlify className="text-9xl"/>
+          <Link href="https://www.netlify.com/" target="_blank">
+            <SiNetlify color="#7F669D" className="text-9xl"/>
+          </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <DiHeroku className="text-9xl"/>
+          <Link href="https://www.heroku.com/">
+            <DiHeroku color="#7F669D" className="text-9xl"/>
+          </Link>
         </div>
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiWebpack className="text-9xl"/>
+          <Link href="https://webpack.js.org/">
+            <SiWebpack color="#7F669D" className="text-9xl"/>
+          </Link>
         </div>
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
-          <SiPostman className="text-9xl"/>
+          <Link href="https://www.postman.com/" target="_blank">
+            <SiPostman color="#7F669D" className="text-9xl"/>
+          </Link>
         </div>
       </div>
     </>
