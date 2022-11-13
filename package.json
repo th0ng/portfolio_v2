@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-buddy/ide-toolbox": "^2.2.1",
     "daisyui": "^2.39.1",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
@@ -17,7 +16,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "react-pdf": "^6.0.3",
     "react-use-downloader": "^1.2.0"
   },
   "devDependencies": {
