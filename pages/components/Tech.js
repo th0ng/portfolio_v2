@@ -13,32 +13,32 @@ export default function Tech() {
       <div className="carousel carousel-center rounded-box">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-            <AiOutlineHtml5 color="#7F669D" className="text-9xl mr-3"/>
+            <AiOutlineHtml5 color="#B2C8DF" className="text-9xl mr-3"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-            <DiCss3 color="#7F669D" className="text-9xl"/>
+            <DiCss3 color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://tailwindcss.com/" target="_blank">
-            <SiTailwindcss color="#7F669D" className="text-9xl"/>
+            <SiTailwindcss color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.javascript.com/" target="_blank">
-            <DiJavascript color="#7F669D" className="text-9xl"/>
+            <DiJavascript color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://reactjs.org/" target="_blank">
-            <DiReact color="#7F669D" className="text-9xl"/>
+            <DiReact color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://vuejs.org/" target="_blank">
-            <SiVuedotjs color="#7F669D" className="text-9xl"/>
+            <SiVuedotjs color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
       </div>
@@ -48,27 +48,27 @@ export default function Tech() {
       <div className="carousel carousel-center rounded-box ">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://nodejs.org/en/" target="_blank">
-            <FaNode color="#7F669D" className="text-9xl"/>
+            <FaNode color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://expressjs.com/" target="_blank">
-            <SiExpress color="#7F669D" className="text-9xl"/>
+            <SiExpress color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.mongodb.com/" target="_blank">
-            <SiMongodb color="#7F669D" className="text-9xl"/>
+            <SiMongodb color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.postgresql.org/" target="_blank">
-            <SiPostgresql color="#7F669D" className="text-9xl"/>
+            <SiPostgresql color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.typescriptlang.org/" target="_blank">
-            <SiTypescript color="#7F669D" className="text-9xl"/>
+            <SiTypescript color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
       </div>
@@ -78,42 +78,42 @@ export default function Tech() {
       <div className="carousel carousel-center rounded-box">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.npmjs.com/" target="_blank">
-            <DiNpm color="#7F669D" className="text-9xl"/>
+            <DiNpm color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://github.com/" target="_blank">
-            <AiFillGithub color="#7F669D" className="text-9xl"/>
+            <AiFillGithub color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.docker.com/" target="_blank">
-            <SiDocker color="#7F669D" className="text-9xl"/>
+            <SiDocker color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://aws.amazon.com/" target="_blank">
-            <FaAws color="#7F669D" className="text-9xl"/>
+            <FaAws color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.netlify.com/" target="_blank">
-            <SiNetlify color="#7F669D" className="text-9xl"/>
+            <SiNetlify color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div> 
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.heroku.com/">
-            <DiHeroku color="#7F669D" className="text-9xl"/>
+            <DiHeroku color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div>
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://webpack.js.org/">
-            <SiWebpack color="#7F669D" className="text-9xl"/>
+            <SiWebpack color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div>
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <Link href="https://www.postman.com/" target="_blank">
-            <SiPostman color="#7F669D" className="text-9xl"/>
+            <SiPostman color="#B2C8DF" className="text-9xl"/>
           </Link>
         </div>
       </div>
