@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
+        sono: "sono",
       },
     },
   },

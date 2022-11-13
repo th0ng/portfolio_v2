@@ -38,7 +38,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110"
+                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium"
                   href="#"
                 >
                   Resume
@@ -47,10 +47,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-6xl py-2 text-purple-400 font-semibold font-mono">
+            <h2 className="text-6xl py-2 text-purple-400 font-sono">
               Thong Hoang
             </h2>
-            <h3 className="text-2xl py-2 font-mono">
+            <h3 className="text-2xl py-2 font-sono">
               Software Engineering student from Tampere.
             </h3>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:pb-0">
@@ -58,8 +58,9 @@ export default function Home() {
               <AiFillLinkedin />
               <AiFillGithub />
             </div>
-            <div className="mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 ring ring-primary ring-offset-base-100 ring-offset-2">
-              <Image src={avatar} layout="fill" objectFit="cover" alt="My avater"/>
+            <div className="mx-auto rounded-full w-80 h-80 flex items-center relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-400 animate-pulse opacity-70"></div>
+              <Image src={avatar} alt="My avater" objectFit="cover" layout="fill"/>
             </div>
           </div>
         </section>

@@ -3,8 +3,8 @@
 export default function About() {
   return (
     <>
-      <h3 className="text-4xl font-burtons pt-5 text-purple-400">About Me</h3>
-          <div className="text-lg pt-8 font-mono">
+      <h3 className="text-4xl font-sono pt-5 text-purple-400">About Me</h3>
+          <div className="text-lg pt-8 font-sono">
             <h4 className="py-3 text-lg lg:text-2xl">
               Hi there. I am an second year <span>Software Engineering</span>  student from Tampere University of Applied Sciences. Lately I have been
               focusing on Fullstack Developing. My experience spans across

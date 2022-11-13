@@ -6,8 +6,8 @@ import {FaNode, FaAws} from "react-icons/fa";
 export default function Tech() {
   return (
     <>
-      <h3 className="text-4xl font-burtons pt-5 text-purple-400">Tech I Use</h3>
-      <h3 className="text-2xl font-burtons pt-3">For building client-side applications</h3>
+      <h3 className="text-4xl font-sono pt-5 text-purple-400">Tech I Use</h3>
+      <h3 className="text-2xl font-sono pt-3">For building client-side applications</h3>
       <div className="carousel carousel-center rounded-box">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <AiOutlineHtml5 className="text-9xl mr-3"/>
@@ -30,7 +30,7 @@ export default function Tech() {
       </div>
 
 
-      <h3 className="text-2xl font-burtons pt-3">For building backend applications</h3>
+      <h3 className="text-2xl font-sono pt-3">For building backend applications</h3>
       <div className="carousel carousel-center rounded-box ">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <FaNode className="text-9xl"/>
@@ -50,7 +50,7 @@ export default function Tech() {
       </div>
 
 
-      <h3 className="text-2xl font-burtons pt-3">Others...and more!</h3>
+      <h3 className="text-2xl font-sono pt-3">Others...and more!</h3>
       <div className="carousel carousel-center rounded-box">
         <div className="carousel-item mr-3 hover:scale-110 cursor-pointer">
           <DiNpm className="text-9xl"/>
