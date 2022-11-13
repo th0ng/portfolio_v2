@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
+import useDownloader from "react-use-downloader";
+
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -18,6 +20,10 @@ import Contactform from "./components/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const { download } = useDownloader();
+  const resumeUrl = "./CV.pdf";
+  const resumeFileName = "CV.pdf";
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -37,12 +43,11 @@ export default function Home() {
                       setDarkMode(!darkMode);}} />}
               </li>
               <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium"
-                  href="#"
+                <button
+                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium" onClick={() => download(resumeUrl, resumeFileName)}
                 >
                   Resume
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
