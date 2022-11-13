@@ -20,7 +20,6 @@ import Contactform from "./components/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const { download } = useDownloader();
 
   return (
     <div className={darkMode ? "dark" : ""}>
