@@ -1,2 +1,3 @@
 NETLIFY_USE_YARN: false,
 NPM_FLAGS: --legacy-peer-deps,
+NETLIFY_NEXT_PLUGIN_SKIP: true,
