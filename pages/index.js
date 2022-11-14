@@ -82,8 +82,8 @@ export default function Home() {
                 <AiFillGithub />
               </Link>
             </div>
-            <div className="mx-auto rounded-full w-80 h-80 flex items-center relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-400 animate-pulse opacity-70 sm:hidden"></div>
+            <div className="mx-auto lg:rounded-full md:rounded-full w-80 h-80 flex items-center relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-400 animate-pulse opacity-80 self-center"></div>
               <Image
                 src={avatar}
                 alt="My avater"
