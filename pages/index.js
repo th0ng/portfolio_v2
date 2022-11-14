@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50">
-        <section className="lg:h-screen overflow-hidden">  
+        <section className="">  
         <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">devedbyaki</h1>
             <ul className="flex items-center">
