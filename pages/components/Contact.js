@@ -2,7 +2,7 @@ import { AiTwotoneMail } from "react-icons/ai";
 
 export default function Contactform() {
   return (
-    <div className="mockup-code bg-purple-400 text-primary-content my-4">
+    <div className="mockup-code bg-purple-400 text-primary-content">
       <pre data-prefix="$">
         <code>Contact me.</code>
       </pre>
