@@ -28,68 +28,73 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50">
-        <section className="">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">devedbyaki</h1>
-            <ul className="flex items-center">
-              <li>
-                {darkMode ? (
-                  <BsBrightnessHighFill
-                    className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform"
-                    onClick={() => {
-                      setDarkMode(!darkMode);
-                    }}
-                  />
-                ) : (
-                  <BsFillMoonStarsFill
-                    className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform"
-                    onClick={() => {
-                      setDarkMode(!darkMode);
-                    }}
-                  />
-                )}
-              </li>
-              <li>
-                <a
-                  href="https://aquamarine-faythe-9.tiiny.site/"
-                  download
-                  className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="text-center p-10">
-            <h2 className="text-6xl py-2 text-purple-400 font-sono">
-              Thong Hoang
-            </h2>
-            <h3 className="text-2xl py-2 font-sono">
-              Software Engineering student from Tampere.
-            </h3>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:pb-0">
-              <Link href="https://twitter.com/aki_hoanq" target="_blank">
-                <AiFillTwitterCircle />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/thong-hoang-04b114214/"
-                target="_blank"
+      <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50 pt-1">
+        <nav className="bg-base-200 rounded-lg px-2 py-3 flex justify-between mb-5">
+          <h1 className="text-xl font-burtons">devedbyaki</h1>
+          <ul className="flex items-center">
+            <li>
+              {darkMode ? (
+                <BsBrightnessHighFill
+                  className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform"
+                  onClick={() => {
+                    setDarkMode(!darkMode);
+                  }}
+                />
+              ) : (
+                <BsFillMoonStarsFill
+                  className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform"
+                  onClick={() => {
+                    setDarkMode(!darkMode);
+                  }}
+                />
+              )}
+            </li>
+            <li>
+              <a
+                href="https://aquamarine-faythe-9.tiiny.site/"
+                download
+                className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium"
               >
-                <AiFillLinkedin />
-              </Link>
-              <Link href="https://github.com/th0ng" target="_blank">
-                <AiFillGithub />
-              </Link>
-            </div>
-            <div className="mx-auto rounded-full md:h-96 md:w-96 flex items-center relative overflow-hidden mt-20 ">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-400 animate-pulse opacity-80"></div>
-              <Image
-                src={avatar}
-                alt="My avater"
-                objectFit="cover"
-                layout="fill"
-              />
+                Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section className="items-stretch">
+          
+          <div className="bg-base-200 card text-center p-10">
+            
+            <div className="card-body overflow-hidden">
+              <h2 className="text-6xl py-2 text-purple-400 font-sono">
+                Thong Hoang
+              </h2>
+              <h3 className="text-2xl py-2 font-sono">
+                Software Engineering student from Tampere.
+              </h3>
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:pb-0">
+                <Link href="https://twitter.com/aki_hoanq" target="_blank">
+                  <AiFillTwitterCircle />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/thong-hoang-04b114214/"
+                  target="_blank"
+                >
+                  <AiFillLinkedin />
+                </Link>
+                <Link href="https://github.com/th0ng" target="_blank">
+                  <AiFillGithub />
+                </Link>
+              </div>
+              <div className="relative mx-auto md:h-96 md:w-96 flex items-center overflow-hidden mt-20 ">
+                
+                <Image
+                  src={avatar}
+                  alt="My avater"
+                  objectFit="cover"
+                  layout="fill"
+                />
+              </div>
             </div>
           </div>
         </section>

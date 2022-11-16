@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <>
+    <div className="card bg-base-200 px-2 py-2">
       <h3 className="text-4xl font-sono pt-5 text-purple-400">About Me</h3>
           <div className="text-lg pt-8 font-sono">
             <h4 className="py-3 text-lg lg:text-2xl">
@@ -21,6 +21,6 @@ export default function About() {
               I enjoy using new tools and techniques to build sites that are both aesthetically pleasing and functional. I also place a high value on collaboration and communication between myself and my clients, which is why I consider it essential to build sites that are not only easy to use but also user-friendly.
             </h4>
           </div>
-    </>
+    </div>
   )
 };
