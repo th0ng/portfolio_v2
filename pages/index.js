@@ -106,7 +106,7 @@ export default function Home() {
           <Projects />
         </section>
 
-        <section className="pt-5">
+        <section className="py-5">
           <Contactform />
         </section>
       </main>
