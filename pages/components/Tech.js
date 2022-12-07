@@ -7,7 +7,7 @@ import {FaNode, FaAws} from "react-icons/fa";
 
 export default function Tech() {
   return (
-    <>
+    <div className="box rounded-lg bg-base-200 px-2 pb-5">
       <h3 className="text-4xl font-sono pt-5 text-purple-400">Tech I Use</h3>
       <h3 className="text-2xl font-sono pt-3">For building client-side applications</h3>
       <div className="carousel carousel-center rounded-box">
@@ -117,6 +117,6 @@ export default function Tech() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   )
 };
