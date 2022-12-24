@@ -28,51 +28,51 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gray-200 px-10 dark:bg-gray-500 md:px-20 lg:px-60 dark:text-yellow-50 pt-1">
-        <nav className="bg-base-200 rounded-lg px-2 py-3 flex justify-between mb-5">
-          <h1 className="text-xl font-burtons">devedbyaki</h1>
-          <ul className="flex items-center">
-            <li>
-              {darkMode ? (
-                <BsBrightnessHighFill
-                  className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform"
-                  onClick={() => {
-                    setDarkMode(!darkMode);
-                  }}
-                />
-              ) : (
-                <BsFillMoonStarsFill
-                  className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform"
-                  onClick={() => {
-                    setDarkMode(!darkMode);
-                  }}
-                />
-              )}
-            </li>
-            <li>
-              <a
-                href="https://aquamarine-faythe-9.tiiny.site/"
-                download
-                className="bg-gradient-to-r from-cyan-500 to-purple-400 text-white px-4 py-2 rounded-md ml-8 hover:scale-110 font-sono-medium"
-              >
-                Resume
-              </a>
-            </li>
-          </ul>
+      <main
+        className="px-10 md:px-20 lg:px-60 pt-1"
+        data-theme={darkMode ? "synthwave" : "autumn"}
+      >
+        <nav className="rounded-lg px-4 py-3 flex justify-between mb-5">
+          <h1 className="text-xl font-burtons text-primary">devedbyaki</h1>
+          {darkMode ? (
+            <BsBrightnessHighFill
+              className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform text-accent"
+              onClick={() => {
+                setDarkMode(!darkMode);
+              }}
+            />
+          ) : (
+            <BsFillMoonStarsFill
+              className="cursor-pointer text-2xl hover:animate-pulse hover:scale-120 transition-transform text-accent"
+              onClick={() => {
+                setDarkMode(!darkMode);
+              }}
+            />
+          )}
+          <a
+            href="https://aquamarine-faythe-9.tiiny.site/"
+            download
+            className="bg-primary text-white px-4 rounded-md ml-8 hover:scale-110 font-sono-medium"
+          >
+            Resume
+          </a>
         </nav>
 
         <section className="items-stretch">
-          
-          <div className="bg-base-200 card text-center p-10">
-            
+          <div className="box rounded-lg text-center p-10 sm:px-0">
             <div className="card-body overflow-hidden">
-              <h2 className="text-6xl py-2 text-purple-400 font-sono">
+              <div className="avatar">
+                <div className="mb-5 w-96 mx-auto rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <Image src={avatar} />
+                </div>
+              </div>
+              <h2 className="text-6xl py-2 font-sono text-primary">
                 Thong Hoang
               </h2>
-              <h3 className="text-2xl py-2 font-sono">
+              <h3 className="text-2xl py-2 font-sono text-accent">
                 Software Engineering student from Tampere.
               </h3>
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 sm:pb-0">
+              <div className="text-5xl flex justify-center gap-16 py-3 text-secondary">
                 <Link href="https://twitter.com/aki_hoanq" target="_blank">
                   <AiFillTwitterCircle />
                 </Link>
@@ -85,15 +85,6 @@ export default function Home() {
                 <Link href="https://github.com/th0ng" target="_blank">
                   <AiFillGithub />
                 </Link>
-              </div>
-              <div className="relative mx-auto md:h-96 md:w-96 flex items-center overflow-hidden mt-20 ">
-                
-                <Image
-                  src={avatar}
-                  alt="My avater"
-                  objectFit="cover"
-                  layout="fill"
-                />
               </div>
             </div>
           </div>
