@@ -50,9 +50,10 @@ export default function Home() {
             />
           )}
           <a
-            href="https://aquamarine-faythe-9.tiiny.site/"
-            download
+            href="https://pdfhost.io/v/TBAZ8SVTO_CV"
             className="bg-primary text-white px-4 rounded-md ml-8 hover:scale-110 font-sono-medium"
+            target="_blank"
+            rel="noreferrer"
           >
             Resume
           </a>
@@ -63,7 +64,7 @@ export default function Home() {
             <div className="card-body overflow-hidden">
               <div className="avatar">
                 <div className="mb-5 w-96 mx-auto rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <Image src={avatar} />
+                  <Image src={avatar} alt="avatar" />
                 </div>
               </div>
               <h2 className="text-6xl py-2 font-sono text-primary">
